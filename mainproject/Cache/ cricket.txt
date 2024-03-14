@@ -1,0 +1,46 @@
+#Title: Introduction to Cricket
+
+#Slide: 1
+#Header: Table of Contents
+#Content: 
+1. What is Cricket?
+2. History of Cricket
+3. Rules and Gameplay
+4. Types of Cricket Matches
+5. Famous Cricket Players
+6. Cricket World Cup
+7. Conclusion
+
+#Slide: 2
+#Header: What is Cricket?
+#Content: Cricket is a popular sport played with a bat and ball. It originated in England and is now played in many countries around the world.
+
+#Slide: 3
+#Header: History of Cricket
+#Content: Cricket has a rich history dating back to the 16th century. It evolved from a simple children's game to a professional sport with international competitions.
+
+#Slide: 4
+#Header: Rules and Gameplay
+#Content: Cricket is played between two teams, with each team taking turns to bat and bowl. The objective is to score more runs than the opposing team.
+
+#Slide: 5
+#Header: Types of Cricket Matches
+#Content: There are different formats of cricket, including Test matches, One Day Internationals (ODIs), and Twenty20 (T20) matches, each with its own rules and duration.
+
+#Slide: 6
+#Header: Famous Cricket Players
+#Content: Cricket has produced many legendary players, such as Sachin Tendulkar, Don Bradman, and Brian Lara, who have left a lasting impact on the sport.
+
+#Slide: 7
+#Header: Cricket World Cup
+#Content: The Cricket World Cup is a prestigious tournament held every four years, where teams from different countries compete for the title of world champions.
+
+#Slide: 8
+#Header: Conclusion
+#Content: Cricket is a captivating sport with a rich history and a global following. It combines skill, strategy, and teamwork, making it a beloved game for millions of fans worldwide.
+
+#Slide: 9
+#Header: Summary
+#Content: In this presentation, we explored the basics of cricket, including its history, rules, different match formats, famous players, and the Cricket World Cup.
+
+#Slide: END

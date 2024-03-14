@@ -1,0 +1,12 @@
+Instructions for use:
+1.Table Creation:
+  For creating the Table in our module ypu have to make sure that you have firstly provided the file name
+  inside the given linedit and clicked on the microsoft word icon so that pur module could add a table in your word document.
+  Next you will have to specify a vallid number of rows and column and make sure that they are mostly double digits as our module 
+  highly supports double digits.After fixing a valid number of rows and columns our AI assistant will make your things done
+2.Powerpoint Creation:
+  For creating a powerpoint presentation in our module you will just have to provide the topic of your presentation and you 
+  will get your presentation ready in just a few seconds and our AI will open it for you.
+
+3.using google bard:
+  

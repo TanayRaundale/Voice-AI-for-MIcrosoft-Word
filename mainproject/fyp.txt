@@ -1,0 +1,12 @@
+modules completed:
+
+1.voice->text
+2.takecommand
+3.Essay generator:web scraping
+4.word to pdf
+5.merging pdfs
+6.Compressing pdfs
+7.image crawler
+8.convert to bold and italic
+
+
