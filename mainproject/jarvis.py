@@ -17,6 +17,7 @@ import time
 import invitation
 import table2
 import cgpt
+import essay
 
 def speak(audio):
     engine = pyttsx3.init('sapi5')
@@ -138,6 +139,14 @@ class MainThread(QThread):
                 elif "text editor" in self.query:
                       speak("Sure Sir, moving you to the Microsoft Word text Editor")
                       realvoice.text_editor()
+                elif "essay" in self.query:
+                    topic = self.query.replace("generate essay on"," ")
+                    speak(f"Generating Essay on {topic}")
+                    speak("Sir, I am Sorry for the inconvenience but I would like to notify you that this might take a few seconds")
+                    speak("Please stay connected")
+                    essay.generate_essay(topic)    
+                elif "thank you" in self.query:
+                    speak("It's my pleasure sir...")    
                 elif "stop" in self.query:
                     speak("Thank You sir for using me")
                     self.close()
