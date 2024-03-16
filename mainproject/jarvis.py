@@ -18,12 +18,15 @@ import invitation
 import table2
 import cgpt
 import essay
+import headings
+
+from webcolors import name_to_rgb,IntegerRGB
 
 def speak(audio):
     engine = pyttsx3.init('sapi5')
     voices = engine.getProperty('voices')
     engine.setProperty('voices', voices[0].id)
-    engine.setProperty('rate', 180)
+    engine.setProperty('rate', 160)
     engine.say(audio)
     engine.runAndWait()
 
@@ -35,7 +38,8 @@ def wishme():
         speak("Good afternoon")
     else:
         speak("Good evening")
-    speak("Sir, I am at your assistance")
+    speak("Sir")
+    speak("this is dock genie at your assistance")
 
 class MainThread(QThread):
     def __init__(self, docname):  # Receive docname as a parameter
@@ -69,12 +73,14 @@ class MainThread(QThread):
             if not self.presentation_in_progress and not self.image_generation_in_progress:
                 self.query = self.takecommand().lower()
                 if "hello" in self.query:
-                    speak("Hello Sir, how can I help you?")
+                    speak("Hello, I'm DOCGenie. How can I assist you today?")
                     
 
                 elif "introduction" in self.query or "introduce" in self.query:
-                    speak("Hi there I am Your word assistant AI generated for making the task of creating word documenst easier and for guding you throught microsoft word.You can use me to generate images,create essays,invitations and also to create some powerpoint presentations")
+                    speak("Hi there I am dock genie, generated for making the task of creating word documenst easier and for guiding you throught microsoft word document generation")
+                    speak("You can use me to generate images,create essays,invitations and also to create solid powerpoint presentations")
                     speak("Also feel free to ask me anything as I am integrated with Google bard too")
+                    speak("For more information please visit our official website")
                     speak("Thank You!")
 
                 elif "presentation" in self.query:
@@ -139,6 +145,21 @@ class MainThread(QThread):
                 elif "text editor" in self.query:
                       speak("Sure Sir, moving you to the Microsoft Word text Editor")
                       realvoice.text_editor()
+
+                elif "headings" in self.query:
+                    speak("please make sure that you have provided me with the file name")
+                    doc = self.docname
+                    while True:
+                        speak("Please tell me the color in which you want the headings")
+                        color = self.takecommand()
+                        color = name_to_rgb(color)
+                        if isinstance(color, IntegerRGB):
+                            break
+                        else:
+                            speak("Invalid color. Please try again.")
+                    headings.take_info(doc, color)
+
+
                 elif "essay" in self.query:
                     topic = self.query.replace("generate essay on"," ")
                     speak(f"Generating Essay on {topic}")
