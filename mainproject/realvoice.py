@@ -4,6 +4,7 @@ import time
 import pyttsx3
 import pygetwindow as gw
 import borders
+import headings
 
 def speak(audio):
     engine = pyttsx3.init('sapi5')
@@ -66,6 +67,11 @@ def text_editor():
                 speak("New file created successfully")
             elif new_text.lower() == "add border":
                 borders.add_page_border_to_word_document()
+             
+            elif new_text.lower() == "justify the document":
+                pyautogui.hotkey('ctrl','a')
+                pyautogui.hotkey('ctrl','j')
+                speak("Document Justified SUccessfully")
             elif new_text.lower() == "close":
                 pyautogui.hotkey('alt','f4')
                 speak("Thanks Sir for using our built in text editor")
